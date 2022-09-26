@@ -1,5 +1,7 @@
 # Tutorial from Algorithms in Python – Full Course for Beginners
 # https://www.youtube.com/watch?v=fW_OS3LGB9Q
+import time
+
 
 def factorial_iterative(n):
     sol = 1
@@ -10,22 +12,20 @@ def factorial_iterative(n):
 
 # Watch:
 # https://www.programiz.com/python-programming/recursion
+# Recursion needs a BASE CONDITION to exit the recursion.
 def factorial_recursive(n):
-     if n == 1:
-         return n
-     else:
-         #tem = factorial_recursive(n-1)
-         #tem = tem * n
+    if n == 1:
+        return n
+    else:
         return factorial_recursive(n-1) * n
 
-#
-# factorial(3)  # 1st call with 3
-# 3 * factorial(2)  # 2nd call with 2
-# 3 * 2 * factorial(1)  # 3rd call with 1
-# 3 * 2 * 1  # return from 3rd call as number=1
-# 3 * 2  # return from 2nd call
-# 6  # return from 1st call
 
+st = time.time()
+print(factorial_iterative(900))
+et = time.time()
+print(et-st)
 
-print(factorial_iterative(5))
-print(factorial_recursive(3))
+st = time.time()
+print(factorial_recursive(900))
+et = time.time()
+print(et-st)

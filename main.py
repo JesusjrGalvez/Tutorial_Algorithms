@@ -2,7 +2,9 @@
 
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-import algorithms001
+import algorithms002
+import timeit
+
 
 # def print_hi(name):
 #     # Use a breakpoint in the code line below to debug your script.
